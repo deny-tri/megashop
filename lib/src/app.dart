@@ -15,7 +15,7 @@ class App extends StatelessWidget {
         create: (context) => AuthBloc(
           authRepository: RepositoryProvider.of<AuthRepository>(context),
         ),
-        child: MaterialApp(
+        child: const MaterialApp(
           debugShowCheckedModeBanner: false,
           home: SignIn(),
           // routerConfig: router,
