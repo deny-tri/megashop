@@ -20,7 +20,7 @@ class CartScreen extends StatelessWidget {
 
                     for (var item in checkState.model) {
                       for (var u in state.data) {
-                        if (u.category![0] == item.category![0]) {
+                        if (u.category[0] == item.category[0]) {
                           tempList.add(u);
                           total += item.price!;
                         }
